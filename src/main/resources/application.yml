@@ -1,8 +1,14 @@
 logging:
   level:
     org:
-      springframework: DEBUG
+      springframework: INFO
 spring:
+  # H2
   h2:
     console:
       enabled: true
+  # Thymeleaf
+  thymeleaf:
+    template-loader-path: classpath:/templates
+    suffix: .html
+    cache: false

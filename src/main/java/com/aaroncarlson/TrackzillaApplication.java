@@ -18,17 +18,17 @@ public class TrackzillaApplication {
 		SpringApplication.run(TrackzillaApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner poulateApplicationDatabase(ApplicationRepository repository) {
-		return (args) -> {
-			repository.save(new Application("Football", "aaron.carlson", "Application for Fantasy Football"));
-			repository.save(new Application("Baseball", "aaron.carlson", "Application for Fantasy Baseball"));
-			repository.save(new Application("Basketball", "aaron.carlson", "Application for Fantasy Basketball"));
-
-			for (Application application : repository.findAll()) {
-				log.info(application.toString());
-			}
-		};
-	}
+//	@Bean
+//	public CommandLineRunner poulateApplicationDatabase(ApplicationRepository repository) {
+//		return (args) -> {
+//			repository.save(new Application("Football", "aaron.carlson", "Application for Fantasy Football"));
+//			repository.save(new Application("Baseball", "aaron.carlson", "Application for Fantasy Baseball"));
+//			repository.save(new Application("Basketball", "aaron.carlson", "Application for Fantasy Basketball"));
+//
+//			for (Application application : repository.findAll()) {
+//				log.info(application.toString());
+//			}
+//		};
+//	}
 
 }
