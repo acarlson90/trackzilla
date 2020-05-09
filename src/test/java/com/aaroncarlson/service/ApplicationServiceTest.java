@@ -23,8 +23,8 @@ public class ApplicationServiceTest {
     }
 
     @Test
-    public void listApplications() throws Exception {
-        Iterable<Application> applications = applicationService.listApplications();
+    public void testGetAllApplications() throws Exception {
+        Iterable<Application> applications = applicationService.getAllApplications();
 
         assertNotNull(applications);
         assertEquals(3, StreamSupport.stream(applications.spliterator(), false).count());

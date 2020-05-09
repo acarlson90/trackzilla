@@ -24,7 +24,7 @@ public class ApplicationControllerTest {
     }
 
     @Test
-    public void getApplications() throws Exception {
+    public void testGetApplicationsPage() throws Exception {
         String returnValue = applicationController.getApplications(model);
         assertEquals("applications", returnValue);
     }

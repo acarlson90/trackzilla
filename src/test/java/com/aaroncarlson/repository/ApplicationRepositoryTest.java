@@ -23,7 +23,7 @@ public class ApplicationRepositoryTest {
     }
 
     @Test
-    public void listApplications() throws  Exception {
+    public void testFindAll() throws  Exception {
         Iterable<Application> applications = applicationRepository.findAll();
 
         assertNotNull(applications);

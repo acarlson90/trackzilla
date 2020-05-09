@@ -24,7 +24,7 @@ public class TicketControllerTest {
     }
 
     @Test
-    public void getTickets() throws Exception {
+    public void testGetTicketsPage() throws Exception {
         String returnValue = ticketController.getTickets(model);
         assertEquals("tickets", returnValue);
     }

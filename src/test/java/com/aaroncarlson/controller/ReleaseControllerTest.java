@@ -24,7 +24,7 @@ public class ReleaseControllerTest {
     }
 
     @Test
-    public void getReleases() throws Exception {
+    public void testGetReleasesPage() throws Exception {
         String returnValue = releaseController.getReleases(model);
         assertEquals("releases", returnValue);
     }
