@@ -14,7 +14,7 @@ public class ReleaseController {
 
     @GetMapping("/releases")
     public String getReleases(Model model) {
-        model.addAttribute("releases", releaseService.listReleases());
+        model.addAttribute("releases", releaseService.getAllReleases());
         return "releases";
     }
 

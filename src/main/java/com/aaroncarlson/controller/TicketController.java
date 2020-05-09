@@ -14,7 +14,7 @@ public class TicketController {
 
     @GetMapping("/tickets")
     public String getTickets(Model model) {
-        model.addAttribute("tickets", ticketService.listTickets());
+        model.addAttribute("tickets", ticketService.getAllTickets());
         return "tickets";
     }
 
