@@ -12,15 +12,26 @@ spring:
     template-loader-path: classpath:/templates
     suffix: .html
     cache: false
+  # Pretty-Print JSON Response
+  jackson:
+    serialization:
+      indent_output: true
 # GraphQL
 graphql:
   servlet:
     mapping: /graphql
     enabled: true
     corsEnabled: true
-
 # GraphiQL
 graphiql:
   enabled: true
   endpoint: /graphql
   mapping: graphiql
+# Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,metrics,loggers,beans,mappings
+    health:
+      show-details: always
