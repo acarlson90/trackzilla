@@ -12,3 +12,15 @@ spring:
     template-loader-path: classpath:/templates
     suffix: .html
     cache: false
+# GraphQL
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+
+# GraphiQL
+graphiql:
+  enabled: true
+  endpoint: /graphql
+  mapping: graphiql
